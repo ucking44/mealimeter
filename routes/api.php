@@ -31,7 +31,6 @@ Route::group(['middleware' => 'auth.jwt'], function () {
     Route::post('user', 'UserController@store');
     Route::put('user/{user}', 'UserController@update');
     Route::delete('user/{id}', 'UserController@delete');
-
 });
 
 
